@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/ico-layout/static/css/main.b4c66891.chunk.css",
+    "main.js": "/ico-layout/static/js/main.96b9eda2.chunk.js",
+    "main.js.map": "/ico-layout/static/js/main.96b9eda2.chunk.js.map",
+    "runtime-main.js": "/ico-layout/static/js/runtime-main.49fa6b00.js",
+    "runtime-main.js.map": "/ico-layout/static/js/runtime-main.49fa6b00.js.map",
+    "static/js/2.9a05f480.chunk.js": "/ico-layout/static/js/2.9a05f480.chunk.js",
+    "static/js/2.9a05f480.chunk.js.map": "/ico-layout/static/js/2.9a05f480.chunk.js.map",
+    "index.html": "/ico-layout/index.html",
+    "static/css/main.b4c66891.chunk.css.map": "/ico-layout/static/css/main.b4c66891.chunk.css.map",
+    "static/js/2.9a05f480.chunk.js.LICENSE.txt": "/ico-layout/static/js/2.9a05f480.chunk.js.LICENSE.txt",
+    "static/media/header-bg.d6b5eff8.png": "/ico-layout/static/media/header-bg.d6b5eff8.png",
+    "static/media/platform-1.88033a39.png": "/ico-layout/static/media/platform-1.88033a39.png",
+    "static/media/platform-2.bf912ed7.png": "/ico-layout/static/media/platform-2.bf912ed7.png",
+    "static/media/platform-3.03d3fc94.png": "/ico-layout/static/media/platform-3.03d3fc94.png",
+    "static/media/platform-4.15184dc4.png": "/ico-layout/static/media/platform-4.15184dc4.png",
+    "static/media/play-ico.0afd5655.svg": "/ico-layout/static/media/play-ico.0afd5655.svg",
+    "static/media/roadmap-circle-pit.be4ff4be.png": "/ico-layout/static/media/roadmap-circle-pit.be4ff4be.png",
+    "static/media/roadmap-line.6ecb6c39.png": "/ico-layout/static/media/roadmap-line.6ecb6c39.png",
+    "static/media/section-bg-2.17141d55.png": "/ico-layout/static/media/section-bg-2.17141d55.png",
+    "static/media/section-bg.c2402120.png": "/ico-layout/static/media/section-bg.c2402120.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.49fa6b00.js",
+    "static/js/2.9a05f480.chunk.js",
+    "static/css/main.b4c66891.chunk.css",
+    "static/js/main.96b9eda2.chunk.js"
+  ]
+}
