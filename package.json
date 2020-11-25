@@ -2,7 +2,7 @@
   "name": "ico-layout",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://tyooma.github.io/{repo-name}",
+  "homepage": "http://tyooma.github.io/ico-layout",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
