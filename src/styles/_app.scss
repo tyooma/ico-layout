@@ -1,0 +1,16 @@
+.app {
+  position: relative;
+
+  overflow: hidden;
+
+  &__background_first {
+    position: absolute;
+    z-index: -1;
+  }
+
+  &__background_second {
+    position: absolute;
+    top: 5150px;
+    z-index: -1;
+  }
+}

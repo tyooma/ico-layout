@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import backgroundFirst from './img/section-bg.png'
+import backgroundSecond from './img/section-bg-2.png'
+
+const { Header } = require("./sections/Header")
+const { Solutions } = require("./sections/Solutions")
+const { Team } = require("./sections/Team")
+const { Token } = require("./sections/Token")
+const { Platform } = require("./sections/Platform")
+const { Roadmap } = require("./sections/Roadmap")
+const { Blog } = require("./sections/Blog")
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Header />
+      <Team />
+      <img
+        src={backgroundFirst}
+        alt="section background"
+        className="app__background_first"
+      />
+      <Solutions />
+      <Token />
+      <img
+        src={backgroundSecond}
+        alt="section background"
+        className="app__background_second"
+      />
+      <Platform />
+      <Roadmap />
+      <Blog />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

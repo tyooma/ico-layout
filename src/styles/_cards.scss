@@ -1,0 +1,50 @@
+.cards {
+  display: flex;
+
+  &__item {
+    padding: 60px 50px;
+    margin-right: 50px;
+  
+    width: 350px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(23, 23, 163, 0.1);
+
+    &:hover {
+      background: linear-gradient(0.25turn, #2d0397, #f962a9);
+      cursor: pointer;
+
+      .cards__title {
+        color: #fff;
+      }
+
+      .cards__description {
+        color: #fff;
+      }
+    }
+  }
+
+  &__img {
+    margin-bottom: 40px;
+  }
+
+  &__title {
+    margin-bottom: 25px;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #1f2047;
+  }
+
+  &__description {
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    color: #9899c5;
+  }
+}

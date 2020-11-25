@@ -1,0 +1,51 @@
+.coins {
+  &__item {
+    position: absolute;
+  }
+
+  &__item--1 {
+    top: 809px;
+    left: 960px;
+
+    animation: coins 6s forwards infinite;
+  }
+
+  &__item--2 {
+    top: 995px;
+    left: 1153px;
+
+    animation: coins 6.2s forwards infinite;
+  }
+
+  &__item--3 {
+    top: 1113px;
+    left: 1444px;
+
+    animation: coins 6.4s forwards infinite;
+  }
+
+  &__item--4 {
+    top: 1200px;
+    left: 1769px;
+
+    animation: coins 6.8s forwards infinite;
+  }
+}
+
+@keyframes coins {
+  0% {
+    transform: scale(1, 1);
+  }
+  25% {
+    transform: scale(0, 1);
+  }
+  50% {
+    transform: scale(-1, 1);
+  }
+  75% {
+    transform: scale(0, 1);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}

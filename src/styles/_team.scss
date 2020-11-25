@@ -1,0 +1,30 @@
+.team {
+  margin-bottom: 77px;
+
+  display: flex;
+  align-items: center;
+
+  &__btn {
+    padding: 0 50px;
+    margin-left: 111px;
+
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(0.25turn, #2d0397, #f962a9);
+    border-radius: 50px;
+  }
+
+  &__link {
+    font-family: 'Rubik', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #fff;
+  }
+}
