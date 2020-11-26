@@ -1,6 +1,7 @@
 import React from 'react'
 
 import logo from '../img/logo.png'
+import more from '../img/more-ico.svg'
 
 export const Navbar = () => {
   return (
@@ -71,11 +72,18 @@ export const Navbar = () => {
             Rus
           </option>
         </select>
-        <div className="nav__wallet-container">
-          <a href="#wallet" className="nav__wallet">
+        <div className="nav__wallet-btn">
+          <a href="#wallet" className="nav__wallet-btn-text">
             My Wallet
           </a>
         </div>
+      </div>
+      <div className="nav__wallet-container">
+        <img
+          src={more}
+          alt="wallet"
+          className="nav__wallet-ico"
+        />
       </div>
     </nav>
   )

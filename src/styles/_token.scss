@@ -1,19 +1,26 @@
 .token {
-  margin-bottom: 220px;
+  @include margin-bottom(220, 110);
 
   &__container {
-    margin-left: 700px;
+    @include margin-left(700, 350);
 
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+
+    @media (max-width: 1364px) {
+      margin: 0 auto;
+
+      align-items: center;
+      justify-content: center;
+    }
   }
 
   &__btn-wrapper {
-    margin-bottom: 60px;
+    @include margin-bottom(60, 30);
 
-    width: 120px;
-    height: 120px;
+    @include width(120, 60);
+    @include height(120, 60);
 
     display: flex;
     align-items: center;
@@ -25,8 +32,8 @@
   }
 
   &__btn {
-    width: 96px;
-    height: 96px;
+    @include width(96, 48);
+    @include height(96, 48);
 
     display: flex;
     align-items: center;
@@ -43,11 +50,15 @@
   }
 
   &__description {
-    width: 823px;
+    @include width(824, 300);
 
     font-family: 'Open Sans', sans-serif;
-    font-size: 45px;
+    @include font(46, 24);
     font-weight: bold;
     color: #1f2047;
+
+    @media (max-width: 1364px) {
+      text-align: center;
+    }
   }
 }

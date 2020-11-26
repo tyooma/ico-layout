@@ -5,6 +5,9 @@
   color: #1f2047;
 
   &__bg {
+    @include width(1377, 688.5);
+    @include height(1420, 710);
+
     position: absolute;
     right: 0;
 
@@ -39,25 +42,26 @@
   }
 
   &__content {
-    margin: 230px 0 300px;
+    @include margin-top(230, 115);
+    @include margin-bottom(300, 150);
 
-    width: 727px;
+    @include width(726, 300);
   }
 
   &__title {
-    margin-bottom: 49px;
+    @include margin-bottom(50, 25);
 
-    font-size: 75px;
+    @include font(70, 40);
     font-weight: bold;
-    line-height: 90px;
+    @include line-height(90, 45);
   }
 
   &__description {
-    margin-bottom: 49px;
+    @include margin-bottom(50, 25);
 
     font-family: 'Rubik', sans-serif;
-    font-size: 30px;
-    line-height: 50px;
+    @include font(30, 16);
+    @include line-height(50, 25);
     color: #9899c5;
   }
 
@@ -66,10 +70,11 @@
   }
 
   &__btn {
-    padding: 0 50px;
-    margin-right: 40px;
+    @include padding-right(50, 25);
+    @include padding-left(50, 25);
+    @include margin-right(40, 20);
 
-    height: 60px;
+    @include height(60, 40);
 
     display: flex;
     align-items: center;
@@ -85,10 +90,10 @@
   }
 
   &__link {
+    @include font(14, 12);
+    font-weight: bold;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 14px;
-    font-weight: bold;
     letter-spacing: 2px;
     color: #fff;
   }

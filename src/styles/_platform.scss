@@ -1,17 +1,22 @@
 .platform {
-  margin-bottom: 200px;
+  @include margin-bottom(200, 100);
 
   display: flex;
   justify-content: center;
 
   &__container {
     display: grid;
-    grid-template-columns: repeat(2, 540px);
+    grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 50px;
+
+    @media (max-width: 769px) {
+      grid-template-columns: 1fr;
+      grid-row-gap: 70px;
+    }
   }
 
   &__item {
-    height: 650px;
+    @include height(650, 325);
 
     position: relative;
 
@@ -21,32 +26,51 @@
 
     &:hover {
       .platform__card {
-        top: 0;
+        @include top(-10, -60);
 
         cursor: pointer;
+      }
+
+      .platform__img {
+        border-radius: 50px;
+        box-shadow: 0 8px 32px rgba(45, 3, 151, 0.4);
+
+        transform: scale(0.94);
       }
     }
   }
 
   &__item--2 {
-    margin-top: 50px;
+    @include margin-top(50, 25);
+
+    @media (max-width: 769px) {
+      margin-top: 0;
+    }
   }
 
   &__item--4 {
-    margin-top: 50px;
+    @include margin-top(50, 25);
+
+    @media (max-width: 769px) {
+      margin-top: 0;
+    }
   }
 
   &__img {
-    width: 540px;
+    @include width(540, 270);
+
+    transition: box-shadow .3s, transform .3s;
   }
 
   &__card {
-    padding: 50px 50px 0;
+    @include padding-top(50, 25);
+    @include padding-right(50, 25);
+    @include padding-left(50, 25);
 
-    width: 464px;
+    @include width(464, 232);
 
     position: absolute;
-    top: 380px;
+    @include top(380, 190);
 
     display: flex;
     flex-direction: column;
@@ -59,12 +83,12 @@
   }
 
   &__title {
-    margin-bottom: 20px;
+    @include margin-bottom(20, 10);
 
     align-self: start;
 
     font-family: 'Rubik', sans-serif;
-    font-size: 14px;
+    @include font(14, 10);
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 4px;
@@ -72,20 +96,20 @@
   }
 
   &__description {
-    margin-bottom: 50px;
+    @include margin-bottom(50, 25);
 
     align-self: start;
 
     font-family: 'Open Sans', sans-serif;
-    font-size: 32px;
+    @include font(32, 16);
     font-weight: bold;
-    line-height: 40px;
+    @include line-height(40, 20);
     color: #1f2047;
   }
 
   &__frame {
-    width: 464px;
-    height: 10px;
+    @include width(464, 232);
+    @include height(10, 5);
 
     background: linear-gradient(0.25turn, #2d0397, #f962a9);
   }

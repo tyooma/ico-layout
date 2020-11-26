@@ -1,5 +1,5 @@
 .roadmap {
-  margin-bottom: 300px;
+  @include margin-bottom(300, 150);
 
   &__container {
     position: relative;
@@ -10,6 +10,9 @@
   }
 
   &__circle-pit {
+    @include width(525, 262);
+    @include height(460, 230);
+
     position: absolute;
     top: 16px;
     left: 300px;
@@ -17,6 +20,10 @@
     z-index: -1;
 
     animation: 14s linear 0s infinite normal circle;
+
+    @media (max-width: 769px) {
+      left: 100px;
+    }
   }
 
   &__subtitle {
@@ -45,6 +52,11 @@
 
   &__line {
     position: relative;
+  }
+
+  &__line-img {
+    @include width(1491, 750);
+    @include height(648, 324);
   }
 
   &__paper-plane {

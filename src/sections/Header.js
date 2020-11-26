@@ -13,7 +13,7 @@ export const Header = () => {
         className="header__bg"
       />
       <Coins />
-      <div className="container">
+      <div className="container header__container">
         <div className="header__nav-container">
           <Navbar />
           <div className="header__nav-first-sub-container" />

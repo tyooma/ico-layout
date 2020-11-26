@@ -1,11 +1,22 @@
 .cards {
-  display: flex;
+  margin-bottom: 50px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 50px;
+
+  @media (max-width: 951px) {
+    grid-template-columns: 1fr;
+    grid-row-gap: 50px;
+  }
 
   &__item {
-    padding: 60px 50px;
-    margin-right: 50px;
+    @include padding-top(60, 30);
+    @include padding-right(50, 25);
+    @include padding-bottom(60, 30);
+    @include padding-left(50, 25);
   
-    width: 350px;
+    @include width(350, 175);
 
     display: flex;
     flex-direction: column;
@@ -14,8 +25,15 @@
     background-color: #fff;
     box-shadow: 0 8px 16px rgba(23, 23, 163, 0.1);
 
+    transition: all .3s ease-in;
+
     &:hover {
       background: linear-gradient(0.25turn, #2d0397, #f962a9);
+      border-radius: 20px;
+      box-shadow: 0 8px 16px rgba(249, 98, 169, 0.4);
+
+      transform: scale(.9);
+
       cursor: pointer;
 
       .cards__title {
@@ -26,25 +44,36 @@
         color: #fff;
       }
     }
+
+    @media (max-width: 951px) {
+      @include width(700, 270);
+
+      display: grid;
+      grid-template-columns: 1fr, repeat(2, 1fr);
+    }
   }
 
   &__img {
-    margin-bottom: 40px;
+    @include margin-bottom(40, 20);
   }
 
   &__title {
-    margin-bottom: 25px;
+    @include margin-bottom(24, 12);
 
     font-family: 'Open Sans', sans-serif;
-    font-size: 30px;
+    @include font(30, 15);
     font-weight: bold;
     color: #1f2047;
+
+    transition: color .3s;
   }
 
   &__description {
     font-family: 'Rubik', sans-serif;
-    font-size: 16px;
-    line-height: 28px;
+    @include font(16, 12);
+    @include line-height(28, 14);
     color: #9899c5;
+
+    transition: color .3s;
   }
 }

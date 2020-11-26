@@ -4,29 +4,41 @@
   }
 
   &__item--1 {
-    top: 809px;
-    left: 960px;
+    @include width(78, 39);
+    @include height(106, 53);
+
+    @include top(810, 405);
+    @include left(960, 480);
 
     animation: coins 6s forwards infinite;
   }
 
   &__item--2 {
-    top: 995px;
-    left: 1153px;
+    @include width(84, 42);
+    @include height(112, 61);
+
+    @include top(996, 498);
+    @include left(1154, 577);
 
     animation: coins 6.2s forwards infinite;
   }
 
   &__item--3 {
-    top: 1113px;
-    left: 1444px;
+    @include width(88, 44);
+    @include height(118, 59);
+
+    @include top(1114, 557);
+    @include left(1444, 722);
 
     animation: coins 6.4s forwards infinite;
   }
 
   &__item--4 {
-    top: 1200px;
-    left: 1769px;
+    @include width(88, 44);
+    @include height(120, 60);
+
+    @include top(1200, 600);
+    @include left(1768, 884);
 
     animation: coins 6.8s forwards infinite;
   }

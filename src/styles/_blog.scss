@@ -6,33 +6,36 @@
   }
 
   &__img {
-    margin-bottom: 60px;
+    @include margin-bottom(60, 20);
+
+    @include width(170, 85);
+    @include height(170, 85);
   }
 
   &__title {
     margin-bottom: 20px;
 
     font-family: 'Open Sans', sans-serif;
-    font-size: 70px;
+    @include font(70, 40);
   }
 
   &__description {
-    margin-bottom: 59px;
-
-    width: 1050px;
+    @include margin-bottom(60, 20);
+    
+    @include width(1050, 300);
   
     font-family: 'Rubik', sans-serif;
-    font-size: 20px;
-    line-height: 36px;
+    @include font(20, 16);
+    @include line-height(36, 26);
     text-align: center;
     color: #9899c5;
   }
 
   &__form {
     padding: 10px 10px 10px 51px;
-    margin-bottom: 148px;
+    @include margin-bottom(148, 75);
 
-    width: 730px;
+    @include width(730, 300);
 
     display: flex;
     align-items: center;
@@ -40,10 +43,18 @@
 
     background-color: #f8faff;
     border-radius: 60px;
+
+    @media (max-width: 769px) {
+      padding: 10px;
+
+      flex-direction: column;
+
+      background-color: transparent;
+    }
   }
 
   &__input {
-    width: 100%;
+    @include width(500, 200);
 
     font-family: 'Rubik', sans-serif;
 
@@ -56,13 +67,22 @@
       font-size: 16px;
       color: #9698bd;
     }
+
+    @media (max-width: 769px) {
+      padding: 20px 40px;
+      margin-bottom: 20px;
+
+      background-color: #f8faff;
+      border-radius: 40px;
+    }
   }
 
   &__btn {
-    padding: 0 50px;
+    @include padding-right(50, 25);
+    @include padding-left(50, 25);
 
-    width: 230px;
-    height: 60px;
+    @include width(230, 150);
+    @include height(60, 40);
 
     display: flex;
     align-items: center;
@@ -74,7 +94,7 @@
 
   &__link {
     font-family: 'Rubik', sans-serif;
-    font-size: 12px;
+    @include font(12, 10);
     letter-spacing: 2px;
     text-decoration: none;
     text-transform: uppercase;

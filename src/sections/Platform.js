@@ -40,12 +40,11 @@ export const Platform = () => {
           {
             platform.map(item => (
               <div className={`platform__item platform__item--${item.id}`} key={item.id}>
-                <div className="platform__img">
-                  <img
-                    src={item.image}
-                    alt="platform"
-                  />
-                </div>
+                <img
+                  src={item.image}
+                  alt="platform"
+                  className="platform__img"
+                />
                 <div className="platform__card">
                   <div className="platform__title">
                     {item.title}

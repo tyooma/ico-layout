@@ -86,6 +86,7 @@ export const Roadmap = () => {
           <img
             src={line}
             alt="roadmap line"
+            className="roadmap__line-img"
           />
         </div>
       </div>

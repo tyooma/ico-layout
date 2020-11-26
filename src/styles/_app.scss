@@ -4,13 +4,24 @@
   overflow: hidden;
 
   &__background_first {
+    @include width(1920, 960);
+    @include height(2920, 1460);
+
     position: absolute;
     z-index: -1;
+
+    @media (max-width: 1364px) {
+      transform: scale(-1, 1);
+      @include left(0, -400)
+    }
   }
 
   &__background_second {
+    @include width(1920, 960);
+    @include height(1526, 763);
+
     position: absolute;
-    top: 5150px;
+    @include top(5150, 4500);
     z-index: -1;
   }
 }
