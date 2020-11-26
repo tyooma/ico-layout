@@ -25,15 +25,27 @@
     @media (max-width: 1370px) {
       margin: 0 auto;
     }
+
+    transition: text-shadow .3s, box-shadow .3s, transform .3s;
+
+    &:hover {
+      text-shadow:0 0 30px rgba(255, 255, 255, 0.6), 0 0 30px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.7);
+      box-shadow: 0 8px 16px rgba(249, 98, 169, 0.3);
+
+      transform: scale(1.01);
+
+      cursor: pointer;
+    }
   }
 
   &__link {
     font-family: 'Rubik', sans-serif;
-    text-decoration: none;
-    text-transform: uppercase;
     @include font(14, 12);
     font-weight: bold;
     letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
     color: #fff;
   }
 }

@@ -10,6 +10,8 @@
 
     @include width(170, 85);
     @include height(170, 85);
+
+    animation: email-box 3s infinite;
   }
 
   &__title {
@@ -90,6 +92,17 @@
 
     background: linear-gradient(0.25turn, #2d0397, #f962a9);
     border-radius: 50px;
+
+    transition: text-shadow .3s, box-shadow .3s, transform .3s;
+
+    &:hover {
+      text-shadow:0 0 30px rgba(255, 255, 255, 0.6), 0 0 30px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.7);
+      box-shadow: 0 8px 16px rgba(45, 3, 151, 0.4);
+
+      transform: scale(1.01);
+
+      cursor: pointer;
+    }
   }
 
   &__link {
@@ -100,5 +113,29 @@
     text-transform: uppercase;
     text-align: center;
     color: #fff;
+  }
+}
+
+@keyframes email-box {
+  0% {
+    transform: scale(.9)
+  }
+  75% {
+    transform: scale(1)
+  }
+  80% {
+    transform: scale(.9)
+  }
+  85% {
+    transform: scale(1);
+  }
+  90% {
+    transform: scale(.9);
+  }
+  95% {
+    transform: scale(1)
+  }
+  100% {
+    transform: scale(.9);
   }
 }

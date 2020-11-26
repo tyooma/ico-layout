@@ -4,7 +4,7 @@ import emailBox from '../img/email-box.png'
 
 export const Blog = () => {
   return (
-    <div className="blog">
+    <div className="blog" id="blog">
       <div className="container blog__container">
         <img
           src={emailBox}

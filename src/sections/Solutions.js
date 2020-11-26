@@ -25,7 +25,7 @@ export const Solutions = () => {
   const rectangles = [1, 2, 3]
 
   return (
-    <div className="solutions">
+    <div className="solutions" id="solutions">
       <div className="container solutions__container">
         <div className="solutions__subtitle">
           Your step for mine

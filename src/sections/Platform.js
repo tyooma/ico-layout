@@ -34,7 +34,7 @@ export const Platform = () => {
   ]
 
   return (
-    <div className="platform">
+    <div className="platform" id="platform">
       <div className="container">
         <div className="platform__container">
           {

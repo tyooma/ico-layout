@@ -4,7 +4,7 @@ import play from '../img/play-ico.svg'
 
 export const Token = () => {
   return (
-    <div className="token">
+    <div className="token" id="token">
       <div className="container token__container">
         <div className="token__btn-wrapper">
           <div className="token__btn">

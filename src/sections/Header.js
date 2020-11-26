@@ -6,7 +6,7 @@ const { Coins } = require("../components/Coins")
 
 export const Header = () => {
   return (
-    <div className="header">
+    <div className="header" id="whitepaper">
       <img
         src={background}
         alt="background"
@@ -28,7 +28,7 @@ export const Header = () => {
           </div>
           <div className="header__btns">
             <div className="header__btn">
-              <a href="#stay-tuned" className="header__link">
+              <a href="#blog" className="header__link">
                 Stay tuned for all the details!
               </a>
             </div>

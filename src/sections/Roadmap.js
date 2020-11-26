@@ -36,7 +36,7 @@ export const Roadmap = () => {
   ]
 
   return (
-    <div className="roadmap">
+    <div className="roadmap" id="roadmap">
       <div className="container roadmap__container">
         <img
           src={circlePit}

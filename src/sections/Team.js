@@ -27,7 +27,7 @@ export const Team = () => {
   ]
 
   return (
-    <div className="container team">
+    <div className="container team" id="team">
       <div className="cards">
         {
           cards.map(card => (
@@ -48,7 +48,7 @@ export const Team = () => {
         }
       </div>
       <div className="team__btn">
-        <a href="#findoutmore" className="team__link">
+        <a href="#blog" className="team__link">
           Find out more
         </a>
       </div>
