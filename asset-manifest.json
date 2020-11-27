@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/ico-layout/static/css/main.186a9e40.chunk.css",
-    "main.js": "/ico-layout/static/js/main.c4797a9c.chunk.js",
-    "main.js.map": "/ico-layout/static/js/main.c4797a9c.chunk.js.map",
+    "main.css": "/ico-layout/static/css/main.7948e4b6.chunk.css",
+    "main.js": "/ico-layout/static/js/main.0ae9d334.chunk.js",
+    "main.js.map": "/ico-layout/static/js/main.0ae9d334.chunk.js.map",
     "runtime-main.js": "/ico-layout/static/js/runtime-main.49fa6b00.js",
     "runtime-main.js.map": "/ico-layout/static/js/runtime-main.49fa6b00.js.map",
     "static/js/2.9a05f480.chunk.js": "/ico-layout/static/js/2.9a05f480.chunk.js",
     "static/js/2.9a05f480.chunk.js.map": "/ico-layout/static/js/2.9a05f480.chunk.js.map",
     "index.html": "/ico-layout/index.html",
-    "static/css/main.186a9e40.chunk.css.map": "/ico-layout/static/css/main.186a9e40.chunk.css.map",
+    "static/css/main.7948e4b6.chunk.css.map": "/ico-layout/static/css/main.7948e4b6.chunk.css.map",
     "static/js/2.9a05f480.chunk.js.LICENSE.txt": "/ico-layout/static/js/2.9a05f480.chunk.js.LICENSE.txt",
     "static/media/header-bg.d6b5eff8.png": "/ico-layout/static/media/header-bg.d6b5eff8.png",
     "static/media/more-ico.3f081514.svg": "/ico-layout/static/media/more-ico.3f081514.svg",
@@ -25,7 +25,7 @@
   "entrypoints": [
     "static/js/runtime-main.49fa6b00.js",
     "static/js/2.9a05f480.chunk.js",
-    "static/css/main.186a9e40.chunk.css",
-    "static/js/main.c4797a9c.chunk.js"
+    "static/css/main.7948e4b6.chunk.css",
+    "static/js/main.0ae9d334.chunk.js"
   ]
 }
