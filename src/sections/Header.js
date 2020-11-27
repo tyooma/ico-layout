@@ -3,6 +3,7 @@ import background from '../img/header-bg.png'
 
 const { Navbar } = require("../components/Navbar")
 const { Coins } = require("../components/Coins")
+const { Burger } = require("../components/Burger")
 
 export const Header = () => {
   return (
@@ -15,6 +16,7 @@ export const Header = () => {
       <Coins />
       <div className="container header__container">
         <div className="header__nav-container">
+          <Burger />
           <Navbar />
           <div className="header__nav-first-sub-container" />
           <div className="header__nav-second-sub-container" />
@@ -33,7 +35,7 @@ export const Header = () => {
               </a>
             </div>
             <div className="header__btn header__btn_white">
-              <a href="#whitepaper" className="header__link header__link_white">
+              <a href="#team" className="header__link header__link_white">
                 White paper
               </a>
             </div>

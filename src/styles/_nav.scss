@@ -1,6 +1,10 @@
 .nav {
-  margin-top: 50px;
-  padding: 30px 50px;
+  @include margin-top(50, 25);
+  @include padding-top(30, 20);
+  @include padding-right(50, 40);
+  @include padding-bottom(30, 20);
+  @include padding-left(50, 40);
+
 
   width: 100%;
   
@@ -13,26 +17,30 @@
   background-color: #fff;
   box-shadow: 0 8px 16px rgba(23, 23, 163, 0.1);
 
+  @media (max-width: 769px) {
+    display: none;
+  }
+
   &__logo-container {
-    margin-right: 60px;
+    @include margin-right(60, 30);
   
     display: flex;
     align-items: center;
   }
 
   &__logo {
-    margin-right: 10px;
+    @include margin-right(10, 6);
 
-    width: 40px;
-    height: 40px;
+    @include width(40, 20);
+    @include height(40, 20);
   }
 
   &__logo-text {
-    width: 40px;
+    @include width(40, 20);
 
     @include font(20, 12);
     font-weight: 600;
-    line-height: 20px;
+    @include line-height(20, 10);
     text-transform: uppercase;
   }
 
@@ -43,15 +51,24 @@
   }
 
   &__link {
-    margin-right: 40px;
+    @include margin-right(40, 20);
 
     font-family: 'Rubik', sans-serif;
-    @include font(14, 12);
+    @include font(14, 8);
     font-weight: 500;
 
     text-decoration: none;
     text-transform: uppercase;
     color: #e5e6ed;
+
+    transition: all .3s;
+
+    &:hover {
+      color: #1f2047;
+      transform: scale(1.01);
+
+      cursor: pointer;
+    }
   }
 
   &__options {
@@ -64,7 +81,7 @@
   }
 
   &__dropdown {
-    margin-right: 40px;
+    @include margin-right(40, 20);
 
     font-family: 'Rubik', sans-serif;
     text-transform: uppercase;
@@ -80,8 +97,8 @@
   }
 
   &__wallet-btn {
-    width: 200px;
-    height: 60px;
+    @include width(200, 100);
+    @include height(60, 30);
 
     display: flex;
     align-items: center;
@@ -114,8 +131,8 @@
   /*<1470 styles*/
   &__wallet-container {
     @media (max-width: 1470px) {
-      width: 40px;
-      height: 40px;
+      @include width(40, 20);
+      @include height(40, 20);
 
       display: flex;
       align-items: center;
@@ -127,7 +144,7 @@
   }
 
   &__wallet-ico {
-    width: 16px;
-    height: 16px;
+    @include width(16, 8);
+    @include height(16, 8);
   }
 }

@@ -24,7 +24,7 @@ export const Blog = () => {
             className="blog__input"
           />
           <div className="blog__btn">
-            <a href="#findoutmore" className="blog__link">
+            <a href="#whitepaper" className="blog__link">
               Get Action
             </a>
           </div>
